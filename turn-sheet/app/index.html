@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="翻房单 TurnSheet — 小微民宿的退房周转执行台：窗口自动变任务单，微信发保洁即派工，布草周转一目了然" />
+  <meta name="theme-color" content="#0e7490" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e7490'/%3E%3Crect x='18' y='50' width='64' height='22' rx='6' fill='%23fff'/%3E%3Crect x='22' y='36' width='22' height='16' rx='5' fill='%23a5f3fc'/%3E%3Crect x='18' y='72' width='8' height='12' fill='%23fff'/%3E%3Crect x='74' y='72' width='8' height='12' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>翻房单 TurnSheet · 民宿周转台</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🧺</span>
+      <div>
+        <h1>翻房单 <small>TurnSheet</small></h1>
+        <p class="tagline">退房到入住之间，不再靠喊</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>房期与布草账仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 布草须一客一换（GB 9663-1996），本工具不替代卫生许可与法定检查</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

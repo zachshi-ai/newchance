@@ -1,0 +1,11 @@
+{
+  "name": "turn-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "翻房单 TurnSheet — 小微民宿退房周转执行台 + 布草供应链台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8083 --directory app"
+  }
+}

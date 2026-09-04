@@ -1,0 +1,14 @@
+{
+  "name": "翻房单 TurnSheet",
+  "short_name": "翻房单",
+  "description": "小微民宿的退房周转执行台：窗口自动变任务单、微信发保洁即派工、布草周转一目了然",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#0e7490",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
