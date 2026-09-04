@@ -1,0 +1,11 @@
+{
+  "name": "work-proof",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "工据 WorkProof — 小微企业劳动用工合规助手（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8082 --directory app"
+  }
+}

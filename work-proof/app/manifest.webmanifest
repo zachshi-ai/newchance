@@ -1,0 +1,14 @@
+{
+  "name": "工据 WorkProof",
+  "short_name": "工据",
+  "description": "小微企业用工合规：未签合同双倍工资计时、试用期红线、社保弃缴无效预警、到期续签提醒、离职证明一键生成",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#2563eb",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

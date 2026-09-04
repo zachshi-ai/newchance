@@ -1,0 +1,6 @@
+/* print.css — 打印单据时只留正文，隐藏应用壳 */
+.topbar, .nav, .foot, .toast, .btn-row, .btn, .stats, .gate { display: none !important; }
+body { background: #fff; }
+.card { border: 0; padding: 0; margin: 0 0 18px; }
+.card h3 { font-size: 18px; }
+textarea { border: 0; resize: none; font-size: 13px; }
