@@ -1,0 +1,14 @@
+{
+  "name": "宠托付 PetHandoff",
+  "short_name": "宠托付",
+  "description": "2 分钟生成照护者真正会看的宠物托养交接单",
+  "start_url": "./index.html#/dashboard",
+  "display": "standalone",
+  "background_color": "#f8f7f4",
+  "theme_color": "#f97316",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="宠托付 PetHandoff — 2 分钟生成照护者真正会看的宠物托养交接单" />
+  <meta name="theme-color" content="#f97316" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f97316'/%3E%3Cellipse cx='50' cy='62' rx='17' ry='14' fill='%23fff'/%3E%3Ccircle cx='29' cy='40' r='9' fill='%23fff'/%3E%3Ccircle cx='45' cy='30' r='9' fill='%23fff'/%3E%3Ccircle cx='61' cy='30' r='9' fill='%23fff'/%3E%3Ccircle cx='76' cy='42' r='9' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" />
+  <title>宠托付 PetHandoff · 托养交接单</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-paw">🐾</span>
+      <div>
+        <h1>宠托付 <small>PetHandoff</small></h1>
+        <p class="tagline">把毛孩子放心交出去</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 本应用不构成医疗建议</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

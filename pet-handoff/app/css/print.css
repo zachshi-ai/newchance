@@ -1,0 +1,7 @@
+/* print.css — 打印托养交接单时只输出预览区 */
+@media print {
+  body > header, body > footer, body > main > *:not(.print-scope), .ho-actions, .toast { display: none !important; }
+  body { background: #fff; }
+  .print-scope { display: block !important; }
+  iframe#ho-frame { border: none; height: auto; }
+}
