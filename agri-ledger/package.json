@@ -1,0 +1,11 @@
+{
+  "name": "agri-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "购销单 AgriLedger — 乡镇农资店农药购销合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8085 --directory app"
+  }
+}

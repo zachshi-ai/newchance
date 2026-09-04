@@ -1,0 +1,14 @@
+{
+  "name": "购销单 AgriLedger",
+  "short_name": "购销单",
+  "description": "乡镇农资店的购销合规台账：进货卖出即落账，禁限用红线当场亮灯，效期临期先知道，执法迎检 30 秒出证",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8faf7",
+  "theme_color": "#15803d",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
