@@ -1,0 +1,11 @@
+{
+  "name": "car-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "车况单 CarSheet — 小微二手车商的车况披露单与库存周转台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8087 --directory app"
+  }
+}
