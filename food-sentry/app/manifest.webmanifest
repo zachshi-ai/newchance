@@ -1,0 +1,14 @@
+{
+  "name": "食安哨 FoodSentry",
+  "short_name": "食安哨",
+  "description": "小店 30 秒食安台账：日管控打卡、周报月报自动汇总、迎检一键打印",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#16a34a",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

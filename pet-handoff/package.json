@@ -5,7 +5,7 @@
   "type": "module",
   "description": "宠托付 PetHandoff — 宠物托养交接单生成器（零依赖本地优先 PWA）",
   "scripts": {
-    "test": "node --test tests/",
+    "test": "node --test tests/core.test.mjs",
     "start": "python3 -m http.server 8080 --directory app"
   }
 }

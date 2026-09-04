@@ -1,0 +1,11 @@
+{
+  "name": "food-sentry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "食安哨 FoodSentry — 小微餐饮食品安全台账生成器（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8081 --directory app"
+  }
+}
