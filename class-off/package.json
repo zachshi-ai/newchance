@@ -1,0 +1,11 @@
+{
+  "name": "class-off",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "消课单 ClassOff — 小微教培机构预收费课时账本（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8084 --directory app"
+  }
+}

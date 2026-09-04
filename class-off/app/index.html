@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="消课单 ClassOff — 小微教培机构的预收费课时账本：点名即消课，对账单微信发家长，余额临期先知道" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Crect x='24' y='22' width='52' height='56' rx='8' fill='%23fff'/%3E%3Crect x='33' y='36' width='34' height='6' rx='3' fill='%23a5b4fc'/%3E%3Crect x='33' y='50' width='34' height='6' rx='3' fill='%23a5b4fc'/%3E%3Crect x='33' y='64' width='18' height='6' rx='3' fill='%23a5b4fc'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>消课单 ClassOff · 课时账本</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">📒</span>
+      <div>
+        <h1>消课单 <small>ClassOff</small></h1>
+        <p class="tagline">消一节，账上少一节；预收费，每一分对得上课</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>学员与课包数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 预收费不得超过 3 个月或 60 课时（教育部等六部门 2021 通知口径），本工具不替代监管平台报送与法定义务</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
