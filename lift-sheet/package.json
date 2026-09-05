@@ -1,0 +1,11 @@
+{
+  "name": "lift-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "梯保单 LiftSheet — 小微电梯维保公司的四周期排班、维保记录与签字确认台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8093 --directory app"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="梯保单 LiftSheet — 小微电梯维保公司的四周期排班、维保记录与签字确认台账：半月/季/半年/年滚动点名、30 秒落单、困人救援时钟、迎检包一键出证" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Crect x='26' y='18' width='48' height='64' rx='8' fill='%23fff'/%3E%3Crect x='34' y='26' width='14' height='48' rx='4' fill='%230f766e'/%3E%3Crect x='52' y='26' width='14' height='48' rx='4' fill='%230f766e'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>梯保单 LiftSheet · 电梯维保底账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🛗</span>
+      <div>
+        <h1>梯保单 <small>LiftSheet</small></h1>
+        <p class="tagline">做了要记录，记录要签字——四周期一屏排班</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>电梯档案与维保流水仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 周期天数与救援时限为参数化预填，以 TSG T5002-2017 原文与属地要求为准 · 本工具是维保单位自持底账，不替代法定报送，事故责任认定以监管与司法机关认定为准</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* 打印：只打印主内容区 */
+.topbar, .foot, .nav, .toast, .noprint { display: none !important; }
+body { background: #fff; }
+.view { max-width: none; margin: 0; padding: 0; }
+.card { border: none; break-inside: avoid; }
+table { font-size: 11px; }
+th, td { border: 1px solid #bbb; }
