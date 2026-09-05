@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>危废账 GarageLedger · 小微修理厂危险废物台账</title>
+<meta name="description" content="汽修厂的危险废物台账：出入库 30 秒记账、贮存超期与资质到期预警、迎检包一键打印，废油收益顺手记成账。数据 100% 本地。" />
+<meta name="theme-color" content="#1b5e20" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icons/icon-192.png" />
+<link rel="apple-touch-icon" href="./icons/icon-192.png" />
+<link rel="stylesheet" href="./css/style.css?v=2" />
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>危废账 <span class="en">GarageLedger</span></h1>
+    <p>汽修厂的危险废物台账 · 负债与收益一本账 · 数据不出设备</p>
+  </div>
+</header>
+<nav id="nav"></nav>
+<main id="view"></main>
+<div id="toast" hidden></div>
+<footer>
+  <p>自查台账与整改指引，不构成法律意见，不替代法定申报与转移联单报送；品目代码与口径以最新名录及属地要求为准。</p>
+</footer>
+<script type="module" src="./js/app.js?v=2"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+}
+</script>
+</body>
+</html>
