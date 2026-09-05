@@ -1,0 +1,14 @@
+{
+  "name": "灭菌单 SterilSheet",
+  "short_name": "灭菌单",
+  "description": "小微口腔诊所的器械清洗消毒灭菌追溯单与院感自查台账：一锅一单连成链、效期先灭先用、监测阳性强制召回、迎检追溯 30 秒出证",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1d4ed8",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

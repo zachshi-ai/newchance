@@ -1,0 +1,11 @@
+{
+  "name": "steril-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "灭菌单 SterilSheet — 小微口腔诊所的器械清洗消毒灭菌追溯单与院感自查台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8090 --directory app"
+  }
+}
