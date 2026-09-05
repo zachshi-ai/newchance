@@ -1,0 +1,14 @@
+{
+  "name": "车销单 RideLedger",
+  "short_name": "车销单",
+  "description": "电动自行车门店的销售与以旧换新合规台账：3C 红线当场亮灯，车架号电池码一单录全，旧车回收台账备查，质保临期主动售后",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fc",
+  "theme_color": "#1d4ed8",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

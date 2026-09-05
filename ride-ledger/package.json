@@ -1,0 +1,11 @@
+{
+  "name": "ride-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "车销单 RideLedger — 电动自行车门店销售与以旧换新合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8094 --directory app"
+  }
+}
