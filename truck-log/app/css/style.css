@@ -1,0 +1,94 @@
+/* style.css — 车轮账 TruckLog（移动优先，手机即车主的记账终端） */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f7f9fa;
+  color: #14212b;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.topbar {
+  background: #0e7490;
+  color: #fff;
+  padding: 12px 14px 10px;
+  position: sticky; top: 0; z-index: 10;
+  box-shadow: 0 1px 6px rgba(14, 116, 144, .25);
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark { font-size: 30px; }
+.brand h1 { font-size: 19px; margin: 0; letter-spacing: .5px; }
+.brand h1 small { font-size: 12px; opacity: .75; font-weight: 400; margin-left: 4px; }
+.tagline { margin: 2px 0 0; font-size: 12px; opacity: .85; }
+.nav { margin-top: 10px; display: flex; gap: 6px; overflow-x: auto; }
+.nav a {
+  color: #e0f2f7; text-decoration: none; font-size: 13.5px;
+  padding: 5px 12px; border-radius: 999px; background: rgba(255, 255, 255, .12);
+  white-space: nowrap;
+}
+.nav a.active { background: #fff; color: #0e7490; font-weight: 600; }
+.view { max-width: 720px; margin: 0 auto; padding: 6px 12px 40px; }
+.sec { font-size: 15.5px; margin: 22px 2px 8px; color: #0f3a47; }
+.card {
+  background: #fff; border: 1px solid #e3eaee; border-radius: 12px;
+  padding: 12px; margin-bottom: 10px;
+}
+.card.alert { border-left: 4px solid #d97706; background: #fffbeb; }
+.card.alert.issue { border-left-color: #dc2626; background: #fef2f2; }
+.card.alert ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; }
+.card.alert li { margin: 3px 0; }
+.progress-card { background: #ecfeff; border-color: #a5d8e3; }
+.progress-text { font-size: 14.5px; }
+.done-note { color: #33636f; font-size: 13px; margin: 6px 0 0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.form-grid label { font-size: 12.5px; color: #51666f; display: flex; flex-direction: column; gap: 3px; }
+.form-grid .span2 { grid-column: span 2; }
+input, select, textarea {
+  font: inherit; font-size: 14px; padding: 7px 9px;
+  border: 1px solid #cfdde3; border-radius: 8px; background: #fbfdfe; color: inherit; width: 100%;
+}
+input:focus, select:focus { outline: 2px solid #67c3d6; border-color: #0e7490; }
+.btn {
+  display: inline-block; border: 0; cursor: pointer; text-decoration: none; text-align: center;
+  background: #0e7490; color: #fff; font-size: 14px; font-weight: 600;
+  padding: 9px 16px; border-radius: 9px;
+}
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: #eef6f8; color: #0e7490; border: 1px solid #cbe2e9; }
+.btn.small { font-size: 12.5px; padding: 5px 10px; border-radius: 7px; font-weight: 500; }
+.btn.block { flex: 1; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.row label { font-size: 13px; color: #51666f; display: flex; align-items: center; gap: 6px; }
+.row select, .row input { width: auto; }
+.stats-line { font-size: 13.5px; color: #51666f; gap: 14px; }
+table.plain { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.plain th, table.plain td { text-align: left; padding: 7px 6px; border-bottom: 1px solid #edf2f5; vertical-align: top; }
+table.plain th { color: #6b8089; font-weight: 500; font-size: 12.5px; }
+.muted td { opacity: .78; }
+.basis { font-size: 12px; color: #7a8e97; margin-top: 2px; }
+.fine { font-size: 12px; color: #7a8e97; margin: 8px 0 0; }
+.pill {
+  display: inline-block; font-size: 11.5px; padding: 1px 8px; border-radius: 999px;
+  background: #e6f4f1; color: #0b6e59; margin: 1px 2px 1px 0; white-space: nowrap;
+}
+.pill.warn { background: #fef3c7; color: #92400e; }
+.pill.bad { background: #fee2e2; color: #b91c1c; }
+.pill.ok { background: #d9f2ea; color: #0b6e59; }
+.preview {
+  background: #f4f8f9; border: 1px solid #e3eaee; border-radius: 8px;
+  padding: 10px; font-size: 12.5px; white-space: pre-wrap; word-break: break-all;
+  max-height: 340px; overflow: auto; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+.toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
+  background: #123845; color: #fff; font-size: 13.5px;
+  padding: 10px 18px; border-radius: 10px; max-width: 86vw; z-index: 50;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .28);
+}
+.foot { max-width: 720px; margin: 0 auto; padding: 10px 14px 30px; }
+.foot p { font-size: 11.5px; color: #93a7af; margin: 0; }
+@media (min-width: 640px) {
+  .form-grid { grid-template-columns: repeat(4, 1fr); }
+  .form-grid .span2 { grid-column: span 2; }
+}

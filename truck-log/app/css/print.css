@@ -1,0 +1,4 @@
+/* print.css — 应用页直接打印时只输出主内容 */
+.topbar, .foot, .nav, .toast, .btn, button { display: none !important; }
+body { background: #fff; }
+.card { border: none; padding: 0; }

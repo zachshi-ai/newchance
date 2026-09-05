@@ -1,0 +1,14 @@
+{
+  "name": "车轮账 TruckLog",
+  "short_name": "车轮账",
+  "description": "小微货运部的一车一档合规台账：证照红黄绿倒计时、技术档案随手记、动态监控报警闭环、迎检一页纸",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f9fa",
+  "theme_color": "#0e7490",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
