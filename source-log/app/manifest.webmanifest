@@ -1,0 +1,14 @@
+{
+  "name": "来路单 SourceLog",
+  "short_name": "来路单",
+  "description": "废品站（再生资源回收站点）的收购实名台账与赃物风险自证台：实名底档、无证明拦截、低价留痕、销赃特征点名、登记册自证单对账单一键出证",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#b45309",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

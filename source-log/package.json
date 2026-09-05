@@ -1,0 +1,11 @@
+{
+  "name": "source-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "来路单 SourceLog — 废品站（再生资源回收站点）收购实名台账与赃物风险自证台（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8093 --directory app"
+  }
+}
