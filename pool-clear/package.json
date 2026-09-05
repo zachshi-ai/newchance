@@ -1,0 +1,11 @@
+{
+  "name": "pool-clear",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "泳清单 PoolClear — 小微游泳场所的水质自检台账与泳客信任公示台（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8088 --directory app"
+  }
+}

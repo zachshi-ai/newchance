@@ -1,0 +1,14 @@
+{
+  "name": "泳清单 PoolClear",
+  "short_name": "泳清单",
+  "description": "小微游泳场所的水质自检台账与泳客信任公示台：每日两检打卡、异常处置复测闭环、缺检点名迎检台账包、每日水质速报发家长群",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0f9ff",
+  "theme_color": "#0369a1",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
