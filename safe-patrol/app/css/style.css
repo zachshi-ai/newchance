@@ -1,0 +1,133 @@
+/* style.css — 安巡单 SafePatrol（移动优先；安全蓝 + 琥珀警示色） */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f5f6f4;
+  color: #1a1a1a;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.topbar {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 14px 16px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark { font-size: 28px; }
+.brand h1 { font-size: 20px; margin: 0; }
+.brand small { font-size: 12px; opacity: 0.75; font-weight: 400; }
+.tagline { margin: 0; font-size: 12px; opacity: 0.85; }
+
+.nav { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
+.nav a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.nav a.active { background: #fbbf24; color: #1e3a8a; font-weight: 600; }
+
+.view { max-width: 860px; margin: 0 auto; padding: 14px 12px 40px; }
+.sec { font-size: 17px; margin: 6px 2px 10px; }
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e4e0;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.card h3 { margin: 0 0 8px; font-size: 15px; }
+
+.stat-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.stat {
+  background: #fff; border: 1px solid #e4e4e0; border-radius: 10px;
+  padding: 6px 10px; font-size: 13px; display: flex; align-items: center; gap: 6px;
+}
+
+.pill { display: inline-block; min-width: 22px; text-align: center; border-radius: 999px; padding: 1px 8px; font-weight: 700; font-size: 12.5px; }
+.pill.good { background: #dcfce7; color: #166534; }
+.pill.warn { background: #fef3c7; color: #92400e; }
+.pill.bad { background: #fee2e2; color: #991b1b; }
+
+.actions { margin: 4px 0; padding-left: 4px; list-style: none; }
+.actions li { padding: 6px 4px; border-bottom: 1px dashed #eee; font-size: 14px; }
+.actions li:last-child { border-bottom: none; }
+
+.hint { color: #666; font-size: 12.5px; margin: 6px 0; }
+.hint.ok-hint { color: #166534; }
+.hint.warn-hint { color: #92400e; }
+
+.btn {
+  display: inline-block; border: 1px solid #1e3a8a; background: #fff; color: #1e3a8a;
+  border-radius: 10px; padding: 8px 14px; font-size: 14px; cursor: pointer; text-decoration: none;
+}
+.btn.primary { background: #1e3a8a; color: #fff; }
+.btn.ghost { border-color: #ccc; color: #555; }
+.btn.danger { border-color: #b91c1c; color: #b91c1c; }
+.btn.small { padding: 4px 10px; font-size: 12.5px; }
+.btn:active { transform: translateY(1px); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+
+form label { display: block; font-size: 13px; color: #444; margin: 8px 0; }
+form input[type="text"], form input[type="date"], form input[type="number"], form input[type="tel"],
+form select, form textarea {
+  width: 100%; padding: 8px 10px; margin-top: 3px;
+  border: 1px solid #d4d4d0; border-radius: 8px; font-size: 14px; background: #fff;
+}
+form select[multiple] { height: auto; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+.inline { display: flex; gap: 8px; align-items: center; }
+.inline input { flex: 1; margin-top: 0; }
+
+.checklist-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.check-item { border: 1px solid #e8e8e4; border-radius: 10px; padding: 8px 10px; background: #fcfcfb; }
+.check-head { display: flex; align-items: center; gap: 8px; }
+.check-idx { font-size: 12px; color: #888; width: 18px; }
+.check-label { flex: 1; font-size: 14px; }
+.radio { font-size: 13px; white-space: nowrap; }
+.radio input { margin-right: 3px; }
+.radio.warn input { accent-color: #d97706; }
+.check-desc { margin-top: 6px; }
+.check-desc:placeholder-shown { border-color: #e8e8e4; }
+
+.measures { border: 1px solid #e8e8e4; border-radius: 10px; margin: 10px 0; padding: 10px; }
+.measures legend { font-size: 13px; color: #444; padding: 0 6px; }
+.measure { display: block; font-size: 13.5px; padding: 3px 0; margin: 0; color: #333; }
+.measure input { accent-color: #1e3a8a; }
+
+table.list { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+table.list th { text-align: left; color: #666; font-weight: 500; padding: 5px 6px; border-bottom: 1px solid #e4e4e0; white-space: nowrap; }
+table.list td { padding: 6px 6px; border-bottom: 1px solid #efefec; vertical-align: top; }
+
+.sheet-pre {
+  background: #f8f8f6; border: 1px solid #e4e4e0; border-radius: 10px;
+  padding: 12px; font-size: 12.5px; white-space: pre-wrap; word-break: break-all;
+  font-family: ui-monospace, Menlo, monospace; max-height: 420px; overflow: auto;
+}
+
+.file-btn { position: relative; overflow: hidden; }
+.file-btn input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+
+.toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
+  background: #1a1a1a; color: #fff; padding: 10px 18px; border-radius: 10px;
+  font-size: 14px; max-width: 88vw; z-index: 50; box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.toast.error { background: #991b1b; }
+
+.foot { max-width: 860px; margin: 0 auto; padding: 12px 16px 30px; }
+.foot p { font-size: 11.5px; color: #999; margin: 0; }
+
+@media (min-width: 640px) {
+  .checklist-grid, .view { }
+  .checklist-grid { grid-template-columns: 1fr 1fr; }
+}

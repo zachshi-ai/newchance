@@ -1,0 +1,6 @@
+/* print.css — 打印收敛：隐藏导航与操作件 */
+@media print {
+  .topbar, .foot, .toast, .btn, form, .stat-row { display: none !important; }
+  body { background: #fff; }
+  .card { border: none; padding: 0; }
+}

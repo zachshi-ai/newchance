@@ -1,0 +1,11 @@
+{
+  "name": "safe-patrol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "安巡单 SafePatrol — 小微工贸企业的安全生产自查台账与动火作业许可（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8091 --directory app"
+  }
+}
