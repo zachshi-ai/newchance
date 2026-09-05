@@ -1,0 +1,14 @@
+{
+  "name": "护安单 CareLedger",
+  "short_name": "护安单",
+  "description": "小微养老机构服务安全台账：九防评估、每班 30 秒打卡、事件闭环与家属告知、周期义务点名、照护安全自证包 30 秒出证",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#4338ca",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

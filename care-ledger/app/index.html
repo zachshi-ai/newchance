@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="护安单 CareLedger — 小微养老机构服务安全台账：九防评估、每班 30 秒打卡、事件闭环与家属告知、周期义务点名、照护安全自证包 30 秒出证" />
+  <meta name="theme-color" content="#4338ca" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234338ca'/%3E%3Cpath d='M50 18 L78 28 V50 Q78 72 50 84 Q22 72 22 50 V28 Z' fill='%23fff'/%3E%3Cpath d='M50 32 L66 38 V51 Q66 64 50 72 Q34 64 34 51 V38 Z' fill='%23e0e7ff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>护安单 CareLedger · 养老机构服务安全台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🛡️</span>
+      <div>
+        <h1>护安单 <small>CareLedger</small></h1>
+        <p class="tagline">评了有痕，查了有账，家属有告知，检查有底账</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>老人与家属信息仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 义务口径见 GB 38600-2019 与《养老机构管理办法》（民政部令第 66 号），本工具不替代法定档案、视频监控与民政报送义务</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

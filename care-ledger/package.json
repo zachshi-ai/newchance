@@ -1,0 +1,11 @@
+{
+  "name": "care-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "护安单 CareLedger — 小微养老机构服务安全台账：九防评估、值班巡查、事件闭环与家属告知、30秒自证包（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8089 --directory app"
+  }
+}
