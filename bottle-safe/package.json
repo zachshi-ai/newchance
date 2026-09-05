@@ -1,0 +1,11 @@
+{
+  "name": "bottle-safe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "瓶安单 BottleSafe — 瓶装液化气二级网点配送与入户安检合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8086 --directory app"
+  }
+}

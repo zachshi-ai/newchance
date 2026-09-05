@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="瓶安单 BottleSafe — 瓶装液化气二级网点的配送与入户安检合规台账：送气落账守恒、安检逐项不漏、隐患整改复访销案、年度安检钢瓶证件不逾期、监管检查 30 秒出证" />
+  <meta name="theme-color" content="#c2410c" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c2410c'/%3E%3Crect x='42' y='18' width='16' height='10' rx='3' fill='%23fff'/%3E%3Crect x='32' y='30' width='36' height='50' rx='9' fill='%23fff'/%3E%3Crect x='40' y='44' width='20' height='6' rx='3' fill='%23c2410c'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>瓶安单 BottleSafe · 液化气配送安检台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">🛢️</span>
+      <div>
+        <h1>瓶安单 <small>BottleSafe</small></h1>
+        <p class="tagline">送气有单，安检有账，隐患有回访</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>供应站经营数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 入户安检与隐患整改依《城镇燃气管理条例》定期安检义务整理，频次与整改要求以条例原文及属地燃气管理部门要求为准；本工具不替代充装追溯、政府数据报送与法定安检义务，工具不判记录真伪——台账的可信度建立在连续真实的记录上</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
