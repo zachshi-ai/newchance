@@ -1,0 +1,11 @@
+{
+  "name": "parcel-proof",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "递安单 ParcelProof — 小微快递末端网点三项制度自证与服务台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8096 --directory app"
+  }
+}

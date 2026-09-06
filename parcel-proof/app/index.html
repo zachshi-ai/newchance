@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="递安单 ParcelProof — 小微快递末端网点的三项制度自证与服务台账：备案 20 日红线、投诉 7 日答复钟、拦截登记簿、罚款申诉挽回账、底单销毁台账、迎检自证包" />
+  <meta name="theme-color" content="#047857" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23047857'/%3E%3Crect x='18' y='40' width='64' height='38' rx='4' fill='%23fff'/%3E%3Crect x='18' y='52' width='64' height='11' fill='%23d1fae5'/%3E%3Crect x='45' y='40' width='10' height='38' fill='%23047857'/%3E%3Ccircle cx='72' cy='30' r='14' fill='%23fff'/%3E%3Cpath d='M66 30l4 4 8-9' stroke='%23047857' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>递安单 ParcelProof · 末端网点自证台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">📦</span>
+      <div>
+        <h1>递安单 <small>ParcelProof</small></h1>
+        <p class="tagline">三项制度留痕、投诉七天有钟、罚款有账可挽回——检查来了 30 秒出证</p>
+      </div>
+    </div>
+    <nav id="nav" class="nav" aria-label="主导航"></nav>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《快递暂行条例》（2025 年修订，国务院令第 806 号）第 19/21/23/29/32/34/35/36 条、《反恐怖主义法》第 20/85 条、《快递市场管理办法》（2024-03-01 施行）第 30 条等，条文出处见 docs/14 · 属地规则、品牌制度与证件文书永远赢，本工具不替代法定报送与备案回执</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

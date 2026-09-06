@@ -1,0 +1,22 @@
+{
+  "name": "递安单 ParcelProof",
+  "short_name": "递安单",
+  "description": "小微快递末端网点的三项制度自证与服务台账：备案 20 日红线、投诉 7 日答复钟、拦截登记簿、罚款申诉挽回账、底单销毁台账、迎检自证包",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#047857",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
