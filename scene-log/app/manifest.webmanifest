@@ -1,0 +1,22 @@
+{
+  "name": "场记单 SceneLog",
+  "short_name": "场记单",
+  "description": "小微剧本娱乐场所（剧本杀·密室）合规台账：剧本报备钟、适龄时段红线、每局消防巡查、周期义务、迎检自证包",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f4fa",
+  "theme_color": "#3d2358",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

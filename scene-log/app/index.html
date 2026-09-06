@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="场记单 SceneLog — 小微剧本娱乐场所（剧本杀·密室）合规台账：剧本报备钟、适龄时段红线、每局防火巡查、周期义务、迎检自证包" />
+  <meta name="theme-color" content="#3d2358" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23231435'/%3E%3Crect x='18' y='24' width='64' height='16' rx='3' fill='%23fff'/%3E%3Cpath d='M18 24l64 16v-6L18 18z' fill='%23c08a1d' opacity='.85'/%3E%3Crect x='18' y='48' width='64' height='30' rx='3' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>场记单 SceneLog · 剧本娱乐合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6.5 20 3.8v3.4L4 9.9z" />
+            <path d="M4 6.9v3L20 7.2" opacity=".55" />
+            <rect x="4.6" y="12.4" width="14.8" height="7.6" rx="1.4" />
+            <path d="M8.6 12.4v7.6M12 12.4v7.6M15.4 12.4v7.6" opacity=".5" />
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>场记单 <small>SceneLog</small></h1>
+          <p class="tagline">报备有钟、适龄有档、每局有巡查——检查来了 30 秒出证</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据文旅市场发〔2022〕70号通知（告知性备案/适龄提示/未成年人限时）、办综执发〔2023〕37号整治清单（备案30自然日/选址200米/适龄标识）、《剧本娱乐经营场所消防安全指南（试行）》（国家消防救援局·文旅部 2023-04-06，每局巡查/月检/半年演练/年培训）、国办发明电〔2025〕7号2026年假日安排，条文出处见 docs/14 · 属地规则与年度假日安排永远赢，本工具不替代法定报送、消防审批与执法认定</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

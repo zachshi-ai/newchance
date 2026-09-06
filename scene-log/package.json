@@ -1,0 +1,11 @@
+{
+  "name": "scene-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "场记单 SceneLog — 小微剧本娱乐场所（剧本杀·密室）报备钟·适龄时段红线·每局消防巡查合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8100 --directory app"
+  }
+}
