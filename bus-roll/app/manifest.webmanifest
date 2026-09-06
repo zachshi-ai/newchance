@@ -1,0 +1,22 @@
+{
+  "name": "护学账 BusRoll",
+  "short_name": "护学账",
+  "description": "小微校车证照时钟与每趟点名照管台账：半年安检钟、年度审验钟、双险到期钟、趟次点名防遗忘、超员红线、迎检自证包",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#14202f",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bus-roll",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "护学账 BusRoll — 小微校车证照时钟与每趟点名照管台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8101 --directory app"
+  }
+}
