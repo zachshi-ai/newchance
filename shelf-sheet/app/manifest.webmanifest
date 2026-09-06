@@ -1,0 +1,22 @@
+{
+  "name": "药清账 ShelfSheet",
+  "short_name": "药清账",
+  "description": "小微零售药店的效期时钟与 GSP 养护合规台账：效期三色档、温湿度日双录、拒售登记簿、近效期催销单、迎检自证包",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f8fc",
+  "theme_color": "#33306b",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

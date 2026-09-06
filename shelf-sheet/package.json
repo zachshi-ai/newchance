@@ -1,0 +1,11 @@
+{
+  "name": "shelf-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "药清账 ShelfSheet — 小微零售药店效期时钟与 GSP 养护合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8098 --directory app"
+  }
+}
