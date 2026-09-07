@@ -1,6 +1,6 @@
 /* sw.js — 极简离线缓存：缓存应用壳，命中失败回退网络。
    安装时用 cache:'reload' 绕过 HTTP 缓存，保证版本升级后拿到的是新资源。 */
-const CACHE = 'bottlesafe-v1';
+const CACHE = 'bottlesafe-v2';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './css/style.css', './css/print.css',

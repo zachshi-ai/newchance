@@ -1,5 +1,5 @@
 /* sw.js — 极简离线缓存：缓存应用壳，命中失败回退网络 */
-const CACHE = 'foodsentry-v2';
+const CACHE = 'foodsentry-v3';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './css/style.css', './css/print.css',
