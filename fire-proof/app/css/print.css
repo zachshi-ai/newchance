@@ -1,0 +1,7 @@
+@media print {
+  .topbar, .nav, .foot, .toast, #modal-host, .btn, .row .btn { display: none !important; }
+  .view { padding: 0; max-width: none; }
+  body { background: #fff; }
+  .card { box-shadow: none; border-color: #ccc; break-inside: avoid; }
+  .preview { background: #fff; color: #111; border-color: #ccc; }
+}

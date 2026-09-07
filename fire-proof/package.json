@@ -1,0 +1,11 @@
+{
+  "name": "fire-proof",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "防火单 FireProof — 九小场所/小微公众聚集场所消防安全合规台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8097 --directory app"
+  }
+}

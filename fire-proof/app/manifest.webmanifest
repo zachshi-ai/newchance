@@ -1,0 +1,13 @@
+{
+  "name": "防火单 FireProof · 场所消防台账",
+  "short_name": "防火单",
+  "description": "九小场所消防安全合规台账：灭火器双钟、防火巡查、隐患闭环、培训演练到期点名、迎检自证包",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#1c0e09",
+  "theme_color": "#1c0e09",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
