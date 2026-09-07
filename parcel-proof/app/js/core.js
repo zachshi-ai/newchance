@@ -675,12 +675,12 @@ export function inspectHtml(state, todayISOStr = todayISO(), settings = {}) {
 <title>末端网点迎检自证包 · ${e(st.name ?? '')}</title>
 <style>
   body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #17251f; margin: 24px; line-height: 1.6; }
-  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #c2432c; letter-spacing: .02em; }
+  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #3370ff; letter-spacing: .02em; }
   .meta { font-size: 12.5px; color: #4d6055; margin: 3px 0; }
-  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #dbe6de; color: #0e5039; }
+  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #e5e6eb; color: #1f2329; }
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 6px 0; }
   th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e3e9e4; }
-  th { color: #0e5039; font-weight: 600; background: #f0f6f2; border-bottom: 2px solid #b9d8c8; }
+  th { color: #51565f; font-weight: 600; background: #f7f8fa; border-bottom: 2px solid #d8dadf; }
   tr:nth-child(even) td { background: #fafcfa; }
   .sign { margin-top: 22px; font-size: 13px; }
   .foot { margin-top: 12px; font-size: 11px; color: #666; }
@@ -754,12 +754,12 @@ export function appealHtml(state, fineId, todayISOStr = todayISO()) {
 <title>罚款申诉材料单 · ${e(fine.no || fine.dateISO)}</title>
 <style>
   body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #17251f; margin: 24px; line-height: 1.6; }
-  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #c2432c; letter-spacing: .02em; }
+  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #3370ff; letter-spacing: .02em; }
   .meta { font-size: 12.5px; color: #4d6055; margin: 3px 0; }
-  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #dbe6de; color: #0e5039; }
+  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #e5e6eb; color: #1f2329; }
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 6px 0; }
   th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e3e9e4; }
-  th { color: #0e5039; font-weight: 600; background: #f0f6f2; border-bottom: 2px solid #b9d8c8; }
+  th { color: #51565f; font-weight: 600; background: #f7f8fa; border-bottom: 2px solid #d8dadf; }
   tr:nth-child(even) td { background: #fafcfa; }
   .box { border: 1px solid #ccc; border-radius: 8px; padding: 10px; font-size: 13px; min-height: 64px; }
   .sign { margin-top: 22px; font-size: 13px; }
