@@ -1,0 +1,11 @@
+{
+  "name": "fork-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "叉车账 ForkLog — 小微场车（叉车）使用单位合规台账：一车一档定检钟、司机 N1 证钟、日管控周排查月调度、派工闸、隐患闭环、迎检自证包（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8105 --directory app"
+  }
+}

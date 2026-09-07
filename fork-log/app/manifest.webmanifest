@@ -1,0 +1,13 @@
+{
+  "name": "叉车账 ForkLog",
+  "short_name": "叉车账",
+  "description": "小微场车（叉车）使用单位合规台账：一车一档定检钟、司机 N1 证钟、日管控周排查月调度、派工闸、隐患闭环、迎检自证包",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
