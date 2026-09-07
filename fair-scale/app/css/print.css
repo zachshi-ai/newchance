@@ -1,0 +1,4 @@
+/* 打印：去掉应用壳，只留正文 */
+.topbar, .foot, .toast, #modal-host { display: none !important; }
+body { background: #fff; }
+.card { box-shadow: none; border-color: #ccc; break-inside: avoid; }

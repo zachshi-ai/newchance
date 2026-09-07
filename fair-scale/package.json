@@ -1,0 +1,11 @@
+{
+  "name": "fair-scale",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "秤平账 FairScale — 集贸市场计量合规台账：一秤一档强检钟、公平秤日检、复秤判差与退一赔三测算、先行赔偿追偿、红黄牌公示（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8103 --directory app"
+  }
+}
