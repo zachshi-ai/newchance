@@ -1,0 +1,11 @@
+{
+  "name": "cert-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "检证账 CertLedger — 小微检验检测机构合规台账：资质证书钟与延续窗口、能力附表与超范围闸、设备检定校准钟、授权签字人闸、报告三道闸与六年保存钟、内审管评与能力验证闭环、迎检自证包（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8107 --directory app"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="检证账 CertLedger — 小微检验检测机构合规台账：资质证书钟与延续窗口、能力附表与超范围闸、设备检定校准钟、授权签字人闸、报告三道闸与六年保存钟、内审管评与能力验证闭环、迎检自证包" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233370ff'/%3E%3Cstop offset='.55' stop-color='%23245bdb'/%3E%3Cstop offset='1' stop-color='%231d3fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cg stroke='%23fff' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Ccircle cx='43' cy='43' r='19'/%3E%3Cpath d='M57 57l16 16'/%3E%3Cpath d='M35 44l6 6 11-13'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>检证账 CertLedger · 检验检测机构合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2L21 21"/>
+            <path d="M8 10.8l2 2 3.6-4.2"/>
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>检证账 <small>CertLedger</small></h1>
+          <p class="tagline">证书有钟、报告有闸、证据有链——不实报告出不了门</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《检验检测机构资质认定管理办法》（总局令第 163 号公布，2021 年总局令第 38 号修改，现行版第 13/14/18/19/20/21/31/35/36/37 条）、《检验检测机构监督管理办法》（总局令第 39 号，第 7/10/11/12/13/14/16/18/25/26 条）、《检验检测机构资质认定评审准则》（总局 2023 年第 21 号公告，2023-12-01 施行，第 9/11/12 条）、《检验检测机构能力验证管理办法》（总局 2023 年第 13 号公告，第 10/17/18/20 条），条文出处见 docs/14 · 内审「每年一次」、管理评审「12 个月一次」为 RB/T 214—2017 惯例口径（评审依据已由 2023 版评审准则承接为管理体系概括义务），已参数化 · 属地资质认定部门与监管部门要求永远赢，本工具不替代资质认定申请、延续、变更与注销等法定程序</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
