@@ -1,0 +1,11 @@
+{
+  "name": "wing-sheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "适飞单 WingSheet — 小微无人机队分类判档、证照三钟与飞行前检查放行台账（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8102 --directory app"
+  }
+}

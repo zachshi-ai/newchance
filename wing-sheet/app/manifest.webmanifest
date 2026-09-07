@@ -1,0 +1,13 @@
+{
+  "name": "适飞单 WingSheet",
+  "short_name": "适飞单",
+  "description": "小微无人机队合规台账：判档器、实名登记与保险钟、执照与定期检查钟、申请红线、航前放行、迎检自证包",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f7fb",
+  "theme_color": "#0b2540",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

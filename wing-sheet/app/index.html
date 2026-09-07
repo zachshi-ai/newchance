@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="适飞单 WingSheet — 小微无人机队合规台账：判档器（微/轻/小/中/大）、实名登记与责任保险钟、操控员执照与定期检查钟、管制空域「前1日12时」申请红线、航前检查放行、飞行安全问题24小时报告钟、迎检自证包" />
+  <meta name="theme-color" content="#0b2540" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2338a3e0'/%3E%3Cstop offset='.55' stop-color='%231c7ed6'/%3E%3Cstop offset='1' stop-color='%230f5da8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cg stroke='%230b2540' stroke-width='7' fill='none'%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='70' cy='30' r='12'/%3E%3Ccircle cx='30' cy='70' r='12'/%3E%3Ccircle cx='70' cy='70' r='12'/%3E%3C/g%3E%3Crect x='41' y='41' width='18' height='18' rx='5' fill='%230b2540'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <title>适飞单 WingSheet · 无人机队合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="6" r="3.1"/><circle cx="18" cy="6" r="3.1"/><circle cx="6" cy="18" r="3.1"/><circle cx="18" cy="18" r="3.1"/>
+            <rect x="9.3" y="9.3" width="5.4" height="5.4" rx="1.3"/>
+            <path d="M8.3 8.3l1.7 1.7M15.7 8.3l-1.7 1.7M8.3 15.7l1.7-1.7M15.7 15.7l-1.7-1.7"/>
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>适飞单 <small>WingSheet</small></h1>
+          <p class="tagline">判档上钟、航前放行、申请盯红线——黑飞不出门，检查来了 30 秒出证</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《无人驾驶航空器飞行管理暂行条例》（国务院、中央军委令第761号，2024-01-01 施行）第10/11/12/16/17/19/24/26/30/31/32/40/47~51/61/62 条、《民用无人驾驶航空器运行安全管理规则》（CCAR-92，交通运输部令2024年第1号）第92.61/92.81/92.83/92.205/92.211/92.547/92.603/92.669/92.671/92.1005 条、GB 42590—2023（2024-06-01 实施）、GB 46761—2025（2026-05-01 实施）、《治安管理处罚法》（2026-01-01 施行）第46条；条文出处见 docs/14 · 属地实施办法与空管机构/民航部门要求永远赢，本工具不替代实名登记、运营合格证、飞行申请等法定手续与执法认定 · 无人机实名登记与操控员执照在 UOM 平台（民用无人驾驶航空器综合管理平台）办理</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
