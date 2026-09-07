@@ -1,0 +1,13 @@
+{
+  "name": "兽诊账 VetLedger",
+  "short_name": "兽诊账",
+  "description": "小微动物诊疗机构合规台账：人员备案名册、处方闸、病历钟、疫苗冷链双录、医废移交、事件上报、年度报告、迎检自证包",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f6f7",
+  "theme_color": "#0a2733",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

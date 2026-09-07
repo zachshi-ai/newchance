@@ -1,0 +1,11 @@
+{
+  "name": "vet-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "兽诊账 VetLedger — 小微动物诊疗机构（宠物医院/诊所）合规台账：人员备案名册、处方闸、病历钟、疫苗冷链双录、医废移交、事件上报、年度报告、迎检自证包（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8104 --directory app"
+  }
+}
