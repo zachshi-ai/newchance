@@ -674,13 +674,14 @@ export function inspectHtml(state, todayISOStr = todayISO(), settings = {}) {
 <meta charset="UTF-8" />
 <title>末端网点迎检自证包 · ${e(st.name ?? '')}</title>
 <style>
-  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #111; margin: 24px; }
-  h1 { font-size: 20px; margin: 0 0 4px; }
-  .meta { font-size: 12.5px; color: #444; margin: 3px 0; }
-  h2 { font-size: 14.5px; margin: 16px 0 6px; }
-  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid #ddd; }
-  th { color: #555; font-weight: 500; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #17251f; margin: 24px; line-height: 1.6; }
+  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #c2432c; letter-spacing: .02em; }
+  .meta { font-size: 12.5px; color: #4d6055; margin: 3px 0; }
+  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #dbe6de; color: #0e5039; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 6px 0; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e3e9e4; }
+  th { color: #0e5039; font-weight: 600; background: #f0f6f2; border-bottom: 2px solid #b9d8c8; }
+  tr:nth-child(even) td { background: #fafcfa; }
   .sign { margin-top: 22px; font-size: 13px; }
   .foot { margin-top: 12px; font-size: 11px; color: #666; }
   @media print { body { margin: 10mm; } }
@@ -752,13 +753,14 @@ export function appealHtml(state, fineId, todayISOStr = todayISO()) {
 <meta charset="UTF-8" />
 <title>罚款申诉材料单 · ${e(fine.no || fine.dateISO)}</title>
 <style>
-  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #111; margin: 24px; }
-  h1 { font-size: 20px; margin: 0 0 4px; }
-  .meta { font-size: 12.5px; color: #444; margin: 3px 0; }
-  h2 { font-size: 14.5px; margin: 16px 0 6px; }
-  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
-  th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid #ddd; }
-  th { color: #555; font-weight: 500; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; color: #17251f; margin: 24px; line-height: 1.6; }
+  h1 { font-size: 20px; margin: 0 0 6px; padding-left: 12px; border-left: 6px solid #c2432c; letter-spacing: .02em; }
+  .meta { font-size: 12.5px; color: #4d6055; margin: 3px 0; }
+  h2 { font-size: 14.5px; margin: 18px 0 7px; padding-bottom: 4px; border-bottom: 1px solid #dbe6de; color: #0e5039; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 6px 0; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e3e9e4; }
+  th { color: #0e5039; font-weight: 600; background: #f0f6f2; border-bottom: 2px solid #b9d8c8; }
+  tr:nth-child(even) td { background: #fafcfa; }
   .box { border: 1px solid #ccc; border-radius: 8px; padding: 10px; font-size: 13px; min-height: 64px; }
   .sign { margin-top: 22px; font-size: 13px; }
   .foot { margin-top: 12px; font-size: 11px; color: #666; }

@@ -15,7 +15,7 @@ import {
   exportBundle, importBundle, DEFAULT_REPLY_DAYS, DEFAULT_DESTROY_DAYS,
 } from './core.js';
 import {
-  viewBoard, viewStation, viewLedger, viewReports, viewSettings,
+  viewBoard, viewStation, viewLedger, viewReports, viewSettings, ICONS,
 } from './ui.js';
 
 const $view = document.getElementById('view');
@@ -28,7 +28,7 @@ let repMonth = null;   // 月度小结用户选择的月份（跨渲染保留）
 let repCache = null;   // 最近一次小结文本
 
 const NAV = [
-  ['#/board', '今日'], ['#/station', '网点'], ['#/ledger', '台账'], ['#/reports', '报表'], ['#/settings', '设置'],
+  ['#/board', '今日', 'board'], ['#/station', '网点', 'store'], ['#/ledger', '台账', 'ledger'], ['#/reports', '报表', 'reports'], ['#/settings', '设置', 'settings'],
 ];
 
 function parseHash() {
@@ -47,8 +47,8 @@ export function render() {
     default: html = viewBoard(state);
   }
   $view.innerHTML = html;
-  $nav.innerHTML = NAV.map(([hash, label]) =>
-    `<a href="${hash}" class="${hash === `#/${path}` ? 'active' : ''}">${label}</a>`).join('');
+  $nav.innerHTML = NAV.map(([hash, label, ic]) =>
+    `<a href="${hash}" class="${hash === `#/${path}` ? 'active' : ''}">${ICONS[ic] ?? ''}<span>${label}</span></a>`).join('');
   window.scrollTo(0, 0);
 }
 

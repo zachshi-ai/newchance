@@ -4,23 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="递安单 ParcelProof — 小微快递末端网点的三项制度自证与服务台账：备案 20 日红线、投诉 7 日答复钟、拦截登记簿、罚款申诉挽回账、底单销毁台账、迎检自证包" />
-  <meta name="theme-color" content="#047857" />
+  <meta name="theme-color" content="#0a261e" />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23047857'/%3E%3Crect x='18' y='40' width='64' height='38' rx='4' fill='%23fff'/%3E%3Crect x='18' y='52' width='64' height='11' fill='%23d1fae5'/%3E%3Crect x='45' y='40' width='10' height='38' fill='%23047857'/%3E%3Ccircle cx='72' cy='30' r='14' fill='%23fff'/%3E%3Cpath d='M66 30l4 4 8-9' stroke='%23047857' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e05a3a'/%3E%3Cstop offset='.55' stop-color='%23c2432c'/%3E%3Cstop offset='1' stop-color='%2399321c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M22 44l28-16 28 16v20L50 80 22 64z' fill='none' stroke='%23fff' stroke-width='6' stroke-linejoin='round'/%3E%3Cpath d='M22 44l28 16 28-16M50 60v20' fill='none' stroke='%23fff' stroke-width='6' stroke-linejoin='round'/%3E%3Cpath d='M40 30l26 15v14' stroke='%23ffc9b8' stroke-width='4' fill='none' stroke-linecap='round' opacity='.55'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/print.css" media="print" />
   <title>递安单 ParcelProof · 末端网点自证台账</title>
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">
-      <span class="brand-mark">📦</span>
-      <div>
-        <h1>递安单 <small>ParcelProof</small></h1>
-        <p class="tagline">三项制度留痕、投诉七天有钟、罚款有账可挽回——检查来了 30 秒出证</p>
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8.2 12 4l8 4.2v7.6L12 20l-8-4.2z" />
+            <path d="M4 8.2 12 12.4l8-4.2M12 12.4V20" />
+            <path d="M8.2 6.1 16.5 11v4.4" opacity=".45" />
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>递安单 <small>ParcelProof</small></h1>
+          <p class="tagline">三项制度留痕、投诉七天有钟、罚款有账可挽回——检查来了 30 秒出证</p>
+        </div>
       </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
     </div>
-    <nav id="nav" class="nav" aria-label="主导航"></nav>
   </header>
 
   <main id="view" class="view"></main>
