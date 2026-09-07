@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="开馆单 VenuePass — 滑雪/潜水/攀岩场馆高危体育经营合规台账：许可证钟与届满 30 日续期窗口、人员名册证书钟、器材检验钟、每日开放前检查卡、开馆五道闸（证在期/人数够/证书在期/日检已落/隐患闭环）、变更手续与周期义务账、迎检自证包" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233370ff'/%3E%3Cstop offset='.55' stop-color='%23245bdb'/%3E%3Cstop offset='1' stop-color='%231d3fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cg stroke='%23fff' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Cpath d='M20 68l18-30 12 20 7-11 15 21'/%3E%3Cpath d='M14 74h72'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>开馆单 VenuePass · 高危体育场馆合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18l5.5-9.5L12 14l2.5-4L20 18"/>
+            <path d="M2 20.5h20"/>
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>开馆单 <small>VenuePass</small></h1>
+          <p class="tagline">证在期、人够数、器在检——五道闸全过，这扇门才开</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《中华人民共和国体育法》（2022 修订）第 105/106/116 条、《全民健身条例》（国务院令第 560 号）第 32/33/34 条、《经营高危险性体育项目许可管理办法》（总局令第 17 号）第 6/14/19~23/28/29 条、《第一批高危险性体育项目目录公告》（总局公告 2013 年第 16 号）、体育总局《体育领域涉企行政检查事项清单》（2025-06-30）检查标准 5 条、GB 19079.4/.6/.10-2013《体育场所开放条件与技术要求》，条文出处见 docs/14 · 日检条目为系列标准通识整理、演练与培训周期为惯例参数化 · 属地体育部门要求永远赢，本工具不替代经营许可申请、延续、变更、注销与高危险性体育赛事活动许可等法定程序</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "venue-pass",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "开馆单 VenuePass — 滑雪/潜水/攀岩场馆高危体育经营合规台账：许可证钟与届满 30 日续期窗口、人员名册证书钟、器材一物一档检验钟、每日开放前检查卡（异常自动转隐患）、开馆五道闸（许可证在期/人数达标/证书在期/日检已落/隐患闭环）当场拦截、变更手续台账、周期义务账、迎检自证包与当日开馆单（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8108 --directory app"
+  }
+}
