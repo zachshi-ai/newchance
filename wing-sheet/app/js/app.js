@@ -16,7 +16,7 @@ import {
 } from './core.js';
 import {
   viewBoard, viewFleet, viewCrew, viewFlights, viewPermits, viewIssues, viewDuties,
-  viewReports, viewSettings, ICONS,
+  viewReports, viewSettings, ICONS, esc,
 } from './ui.js';
 
 const $view = document.getElementById('view');

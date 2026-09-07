@@ -594,12 +594,14 @@ export function closeFlight(state, flightId, { landingISO, durationMin = null, i
   const flight = state.flights.find((f) => f.id === flightId);
   if (!flight) throw new Error('架次不存在');
   if (flight.status !== 'flying') throw new Error(REJECT_REASONS.NOT_FLYING);
-  const dur = durationMin === null || durationMin === '' ? null : num(durationMin);
-  if (dur !== null && (!Number.isFinite(dur) || dur < 0)) throw new Error(REJECT_REASONS.BAD_NUMBER);
+  const durRaw = durationMin === null || durationMin === '' ? null : num(durationMin);
+  const dur = durRaw !== null && Number.isFinite(durRaw) ? durRaw : null;
+  if (dur !== null && dur < 0) throw new Error(REJECT_REASONS.BAD_NUMBER);
   let inc = income;
   if (flight.purpose === 'commercial') {
-    inc = inc === null || inc === '' ? null : num(income);
-    if (inc !== null && (!Number.isFinite(inc) || inc < 0)) throw new Error(REJECT_REASONS.BAD_NUMBER);
+    const incRaw = inc === null || inc === '' ? null : num(inc);
+    inc = incRaw !== null && Number.isFinite(incRaw) ? incRaw : null;
+    if (inc !== null && inc < 0) throw new Error(REJECT_REASONS.BAD_NUMBER);
   } else {
     inc = null;
   }
@@ -1026,5 +1028,7 @@ export function exportBundle(state) {
 export function importBundle(text) {
   const s = JSON.parse(text);
   if (!s || typeof s !== 'object' || !Array.isArray(s.uas)) throw new Error('不是有效的适飞账备份文件');
-  return { ...emptyState(), ...s };
+  const merged = { ...emptyState(), ...s };
+  merged.settings = { ...DEFAULT_SETTINGS, ...(s.settings ?? {}) };
+  return merged;
 }

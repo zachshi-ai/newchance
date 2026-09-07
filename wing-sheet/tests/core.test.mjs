@@ -352,6 +352,27 @@ test('闭环：状态门禁；经营性记收入；安全问题必须写明；�
   assert.throws(() => closeFlight(s, f.id, { landingISO: T }), /在飞/);
 });
 
+test('闭环可选字段：时长/收入留空（NaN/空串）不报错、落为 null；负数仍拒绝（装配层回归）', () => {
+  const s = fresh();
+  const { uas, pilot } = rig(s);
+  const f1 = startFlight(s, { uasId: uas.id, pilotId: pilot.id, dateISO: T, purpose: 'commercial' });
+  preflight(s, f1.id, { items: allOk(), dateISO: T });
+  takeoff(s, f1.id, { dateISO: T });
+  closeFlight(s, f1.id, { landingISO: T, durationMin: NaN, income: NaN });
+  assert.equal(f1.durationMin, null);
+  assert.equal(f1.income, null);
+  const f2 = startFlight(s, { uasId: uas.id, pilotId: pilot.id, dateISO: T, purpose: 'personal' });
+  preflight(s, f2.id, { items: allOk(), dateISO: T });
+  takeoff(s, f2.id, { dateISO: T });
+  closeFlight(s, f2.id, { landingISO: T, durationMin: '', income: '' });
+  assert.equal(f2.durationMin, null);
+  assert.equal(f2.income, null);
+  const f3 = startFlight(s, { uasId: uas.id, pilotId: pilot.id, dateISO: T, purpose: 'commercial' });
+  preflight(s, f3.id, { items: allOk(), dateISO: T });
+  takeoff(s, f3.id, { dateISO: T });
+  assert.throws(() => closeFlight(s, f3.id, { landingISO: T, durationMin: -3 }), /非负数/);
+});
+
 test('安全问题 24 小时报告钟（第40条）：截止=降落日+1；报告后清零', () => {
   const s = fresh();
   const { uas, pilot } = rig(s);
@@ -467,6 +488,19 @@ test('导出/导入往返一致；异构文件拒绝', () => {
   assert.equal(back.permits.length, s.permits.length);
   assert.deepEqual(back.org, s.org);
   assert.throws(() => importBundle('{"foo":1}'), /备份文件/);
+});
+
+test('冷启动契约：settings 缺失/为空对象时必须回落到全量默认参数（NaN 炸渲染回归）', () => {
+  // 老备份/冷启动可能带 settings:{} —— 参数化键缺失会让 addMonthsISO 算出 NaN-NaN-NaN
+  const back = importBundle('{"uas":[],"pilots":[{"id":"p1","name":"老陈","licenseIssueISO":"2024-03-01","lastProfCheckISO":"2026-08-29"}],"settings":{}}');
+  assert.equal(back.settings.profCheckMonths, 24);
+  assert.equal(back.settings.licenseYears, 6);
+  const clocks = pilotClocks(back.pilots[0], T, back.settings); // 不抛 = 周期参数齐
+  assert.equal(clocks.find((c) => c.key === 'license').dueISO, '2030-03-01');
+  // 空对象合并后仍可判级
+  assert.equal(certLevel(15, back.settings), 'red');
+  // core.emptyState（种子与单测路径）自带全量参数
+  assert.equal(emptyState().settings.profCheckMonths, 24);
 });
 
 test('示例种子自洽：架次状态合法；异常架次起飞被拒；口袋机红灯在册；批复台账可复算', () => {

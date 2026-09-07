@@ -8,7 +8,7 @@
  * 数据最小披露：飞行日志只存任务地点与人数/收入，不存客户身份信息；
  * 操控员只存姓名与尾号级联系方式——全部只存本机。
  */
-import { STATE_VERSION } from './core.js';
+import { STATE_VERSION, DEFAULT_SETTINGS } from './core.js';
 
 const KEY = 'wingsheet.v1';
 
@@ -25,7 +25,7 @@ export function emptyState() {
     permits: [],  // { id, uasId, pilotId, flyingDateISO, reason, location, note, submittedISO, decidedISO, approved, permitNo, preDepISO, status }
     issues: [],   // { id, uasId, flightId, dateISO, item, measure, deadlineISO, closedISO, closeNote, status, note }
     duties: [],   // { id, kind, lastDoneISO, note }
-    settings: {}, // 与 core.DEFAULT_SETTINGS 并集（本地可覆盖）
+    settings: { ...DEFAULT_SETTINGS }, // 全量默认参数；loadState/importBundle 再做局部覆盖合并
     seq: { uas: 0, pilot: 0, flight: 0, permit: 0, issue: 0, duty: 0 },
     events: [],   // HDD 埋点（本地事件流，用于验证闭环，可导出）
   };
@@ -36,7 +36,9 @@ export function loadState() {
     const raw = localStorage.getItem(KEY);
     if (!raw) return emptyState();
     const s = JSON.parse(raw);
-    return { ...emptyState(), ...s };
+    const merged = { ...emptyState(), ...s };
+    merged.settings = { ...DEFAULT_SETTINGS, ...(s.settings ?? {}) };
+    return merged;
   } catch {
     return emptyState();
   }
