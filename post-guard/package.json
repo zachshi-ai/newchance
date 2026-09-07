@@ -1,0 +1,11 @@
+{
+  "name": "post-guard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "岗卫账 PostGuard — 小微企业接害岗位职业健康监护台账（三钟模型：上岗前闸钟/在岗到期钟/离岗闸钟 + 检测·申报·培训·防护四件套，零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8099 --directory app"
+  }
+}

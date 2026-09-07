@@ -1,0 +1,8 @@
+/* 岗卫账 PostGuard — 打印样式：迎检/存档打印 */
+.topbar, .nav, .foot, #toast, form.panel, details.detail summary, .no-print { display: none !important; }
+body { background: #fff; }
+.view { max-width: none; padding: 0; }
+.card { border: none; padding: 0; margin: 0 0 14px; break-inside: avoid; }
+table { font-size: 12px; }
+th { background: #eee !important; }
+.badge { border: 1px solid #999; }
