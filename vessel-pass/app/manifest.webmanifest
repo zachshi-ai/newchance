@@ -1,0 +1,13 @@
+{
+  "name": "船安单 VesselPass",
+  "short_name": "船安单",
+  "description": "内河船舶合规台账：一船一档四证钟（检验证书/国籍证书/最低安全配员证书/责任保险文书）、船员适任证书钟与健康证明钟、配员核对引擎、每日开航前自查卡（安全监督规则第42条）、开航五道闸、缺陷闭环、变更登记与周期义务账、海事迎检自证包与当次开航单",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

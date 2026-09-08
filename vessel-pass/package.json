@@ -1,0 +1,11 @@
+{
+  "name": "vessel-pass",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "船安单 VesselPass — 内河船舶合规台账：一船一档四证钟（检验证书照证书录入/国籍证书5年届满前1年换发窗口/最低安全配员证书/责任保险文书）、船员适任证书钟（≤5年+65周岁红线）与健康证明钟、配员核对引擎、每日开航前自查卡（2022年27号令第42条、异常自动转缺陷）、开航五道闸（四证在期/配员达标/适任在期/自查已签/缺陷闭环当场拦截+当次快照）、缺陷闭环状态机、变更登记与周期义务账、海事迎检自证包与当次开航单（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8110 --directory app"
+  }
+}
