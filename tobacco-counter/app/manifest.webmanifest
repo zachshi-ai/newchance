@@ -1,0 +1,13 @@
+{
+  "name": "烟柜账 CounterBook",
+  "short_name": "烟柜账",
+  "description": "烟草专卖零售户合规台账：许可证钟、品规一物一档与渠道钟、售烟四道闸（证在期/渠道合法/未成年人核验/电子烟专闸）、每日开柜检查卡、合规事件闭环、迎检自证包与当日柜台核对单",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

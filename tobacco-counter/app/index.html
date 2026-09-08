@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="烟柜账 CounterBook — 烟草专卖零售户合规台账：许可证钟（5 年/届满 30 日延续窗口/停业 1 年上限）、品规一物一档与渠道钟（当地批发企业/电子烟交易平台）、售烟四道闸（证在期/渠道合法/未成年人核验/电子烟专闸）当场拦截带法条理由、每日开柜检查卡、合规事件闭环、变更手续与周期义务账、迎检自证包与当日柜台核对单" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233370ff'/%3E%3Cstop offset='.55' stop-color='%23245bdb'/%3E%3Cstop offset='1' stop-color='%231d3fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cg stroke='%23fff' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Crect x='22' y='40' width='56' height='16' rx='3'/%3E%3Cpath d='M30 56v20M46 56v20M62 56v20M78 56v20'/%3E%3Cpath d='M26 32h48'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>烟柜账 CounterBook · 烟草专卖零售合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="9" width="16" height="5" rx="1"/>
+            <path d="M6.5 14v6M11 14v6M15.5 14v6"/>
+            <path d="M5 6.5h14"/>
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>烟柜账 <small>CounterBook</small></h1>
+          <p class="tagline">证在期、货来正、不卖未成年——每笔售烟过四闸，落账即自证</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《中华人民共和国烟草专卖法》（2015 修正）第 3/16/32 条、《烟草专卖法实施条例》（2023 第四次修订）第 23/25/46/56/57/58/65 条、《烟草专卖许可证管理办法》（工信部令第 37 号）及其实施细则（国烟法〔2020〕205 号）第 22/23/43/48/49/50/51 条、《电子烟管理办法》（国家烟草专卖局公告 2022 年第 1 号）第 19/20/22/23/26 条、《未成年人保护法》（2021-06-01 施行）第 59/123 条，条文出处见 docs/14 · 开柜检查条目为法定义务的现场落地整理、库存月查等周期为惯例参数化 · 属地烟草专卖局要求永远赢，本工具不替代许可证申请、延续、变更、停业、注销等法定程序</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

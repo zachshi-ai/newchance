@@ -1,0 +1,11 @@
+{
+  "name": "tobacco-counter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "烟柜账 CounterBook — 烟草专卖零售户合规台账：许可证钟（5 年/届满 30 日延续窗口/停业 1 年上限）、品规一物一档与渠道钟、售烟四道闸（证在期/渠道合法/未成年人核验/电子烟专闸）当场拦截带法条理由、每日开柜检查卡（异常自动转合规事件）、红旗批次隔离与闭环解除、变更手续与周期义务账、迎检自证包与当日柜台核对单（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8111 --directory app"
+  }
+}
