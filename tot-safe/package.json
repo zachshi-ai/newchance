@@ -1,0 +1,11 @@
+{
+  "name": "tot-safe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "托安单 TotSafe — 托育机构合规台账：机构证照三钟（消防年度证明/食品经营许可证/租约≥3年）、人员健康证全员年检钟与岗位资质钟、师幼配比红线引擎（乳儿班1:3/托小班1:5/托大班1:7）、每日晨午检卡（异常自动转健康事件）、送托六道闸（备案证照在期/配比达标/证书在期/晨检已落/隐患闭环/健康事件处置）当场拦截、健康事件状态机（通知监护人→治愈凭证返园）、变更备案与周期义务账、迎检自证包与家长信任公示单（零依赖本地优先 PWA）",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "start": "python3 -m http.server 8109 --directory app"
+  }
+}

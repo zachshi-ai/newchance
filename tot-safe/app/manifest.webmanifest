@@ -1,0 +1,13 @@
+{
+  "name": "托安单 TotSafe",
+  "short_name": "托安单",
+  "description": "托育机构合规台账：机构证照三钟（消防年度/食品证/租约≥3年）、人员健康证全员年检钟、师幼配比红线引擎（1:3/1:5/1:7）、每日晨午检卡与健康事件闭环（通知监护人→治愈凭证返园）、送托六道闸、变更备案与周期义务账、迎检自证包与家长信任公示单",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
