@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="拍片单 XrayPass — 口腔诊所/宠物医院放射诊疗合规台账：辐射安全许可证与放射诊疗许可证双证钟（5年/届满30日延续）、设备状态检测与场所防护检测双钟、人员培训钟与个人剂量钟（≤90天）、拍片六道闸（双证/检测/培训/剂量/妊娠询问红线当场拦截+合规快照）、事件闭环与变更台账、迎检自证包" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233370ff'/%3E%3Cstop offset='.55' stop-color='%23245bdb'/%3E%3Cstop offset='1' stop-color='%231d3fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cg stroke='%23fff' stroke-width='6' stroke-linecap='round' fill='none'%3E%3Ccircle cx='50' cy='50' r='30'/%3E%3Ccircle cx='50' cy='50' r='12'/%3E%3Cpath d='M50 14v14M50 72v14M14 50h14M72 50h14'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>拍片单 XrayPass · 放射诊疗合规台账</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-in">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="2.6"/>
+            <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/>
+          </svg>
+        </span>
+        <div class="brand-txt">
+          <h1>拍片单 <small>XrayPass</small></h1>
+          <p class="tagline">证在期、机在检、量在读——六道闸过完，这张片子照得清白</p>
+        </div>
+      </div>
+      <nav id="nav" class="nav" aria-label="主导航"></nav>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    <p>台账数据仅保存在本机浏览器（本地优先），可在「设置」导出备份 · 口径依据《放射性同位素与射线装置安全和防护条例》（国务院令第 449 号，2019 修订）第 5/8/11/12/13/28/29/30/41/42/52/53 条、《放射诊疗管理规定》（卫生部令第 46 号，2016 修订）第 4/17/19/20/21/25/26/38/39/41 条、《放射工作人员职业健康管理办法》（卫生部令第 55 号）第十一条、《射线装置分类》（2017 年第 66 号公告），条文出处见 docs/14 · 培训复训与场所防护检测周期为惯例参数化 · 属地生态环境与卫生部门要求永远赢，本工具不替代辐射安全许可、放射诊疗许可、校验与建设项目审查等法定程序；口腔院感归灭菌单、职业健康监护归岗卫账、动物诊疗主体管理归兽诊账（领域互斥）</p>
+  </footer>
+
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

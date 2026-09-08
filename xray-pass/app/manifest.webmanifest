@@ -1,0 +1,13 @@
+{
+  "name": "拍片单 XrayPass",
+  "short_name": "拍片单",
+  "description": "口腔诊所/宠物医院放射诊疗合规台账：双证钟、设备状态检测钟、人员培训与个人剂量钟、拍片六道闸（含妊娠询问红线）当场拦截、事件闭环与变更台账、迎检自证包",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f3f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
